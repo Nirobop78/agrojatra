@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>About Us - Agrojatra</title>
+    <link rel="icon" href="Agrojatra.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&family=Noto+Serif+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <script src="https://unpkg.com/lucide@latest">
+    </script>
+    <style>
+        :root {
+            --primary: linear-gradient(135deg, #57a6ff, #0f63ff);
+            --p: rgb(0 130 255);
+            --bg: #faf9f6;
+            --c: #fff;
+            --t: #1f2937;
+            --b: #f7f7f7;
+        }
+
+        * {
+            font-family: 'Google Sans', 'Noto Serif Bengali', sans-serif;
+        }
+
+        body {
+            background: rgb(249 247 241);
+            color: var(--t);
+        }
+
+        .card {
+            background: var(--c);
+            border-radius: 20px;
+            border: 2px solid var(--b);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .03);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            border: none;
+            font-weight: 600;
+            border-radius: 12px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1.5px solid #e5e7eb;
+            border-radius: 12px;
+            background: #f9fafb;
+            transition: 0.2s;
+        }
+
+        .input-field:focus {
+            border-color: var(--p);
+            outline: none;
+        }
+
+        .form-iframe {
+            width: 100%;
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .form-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border-radius: 12px;
+            background: #fff;
+        }
+
+        .form-iframe {
+            width: 100%;
+            min-height: 600px;
+            border: none;
+            display: block;
+        }
+
+        @media (max-width: 640px) {
+            .form-iframe {
+                min-height: 80vh;
+            }
+        }
+
+        /* ---- হাইলাইট অ্যানিমেশন ---- */
+        .highlight-name {
+            display: inline;
+            background-image: linear-gradient(to right, rgb(124 186 255), rgb(196 153 255));
+            background-size: 0% 100%;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            padding: 0 4px;
+            border-radius: 0px;
+            animation: highlightFill 1.2s ease forwards;
+            color: inherit;
+        }
+
+
+        @keyframes highlightFill {
+            0% {
+                background-size: 0% 100%;
+            }
+            100% {
+                background-size: 100% 100%;
+            }
+        }
+
+        /* ব্লিঙ্কিং কার্সর */
+        .typing-cursor {
+            display: inline-block;
+            width: 3px;
+            height: 1.2em;
+            background: black;
+            margin-left: 4px;
+            vertical-align: text-bottom;
+            animation: blink 0.9s infinite;
+            border-radius: 1px;
+        }
+
+        @keyframes blink {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .typing-cursor {
+                width: 2.5px;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-30">
+        <div class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3">
+            <a href="index.html" class="flex items-center gap-2 text-gray-600 hover:text-black transition">
+                <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                <span class="text-sm font-medium">ড্যাশবোর্ড</span>
+            </a>
+            <div class="flex items-center gap-2">
+                <img src="Agrojatra.png" alt="Agrojatra" class="w-9 h-8 object-cover rounded">
+                <h1 class="font-bold text-lg">Agrojatra</h1>
+            </div>
+            <div class="w-12"></div>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-4xl mx-auto px-4 py-8 w-full space-y-10">
+        <!-- Developer Section -->
+        <section class="text-center space-y-4">
+            <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <img src="nirob fb pp.png" alt="Developer" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="w-full h-full bg-sky-100 items-center justify-center hidden" style="display:none;">
+                    <i data-lucide="user" class="w-12 h-12 text-sky-500"></i>
+                </div>
+            </div>
+            <h2 class="text-2xl font-bold">
+                <span class="highlight-name">Nafij uddin Nirob</span><span class="typing-cursor"></span>
+            </h2>
+            <p class="text-gray-500 max-w-lg mx-auto">
+                Nafij Uddin Nirob is the founder and CEO of Agrojatra Corporation.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="card p-6 md:p-8">
+            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2"><i data-lucide="phone" class="w-5 h-5 text-sky-500"></i> যোগাযোগ</h3>
+            <div class="grid sm:grid-cols-3 gap-4 text-center">
+                <a href="https://www.facebook.com/messages/e2ee/t/8310320759094920" target="_blank" class="flex flex-col items-center gap-2 p-4 rounded-2xl hover:bg-gray-50 transition border border-gray-100">
+                    <div class="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center"><i data-lucide="message-circle" class="w-6 h-6 text-sky-600"></i></div>
+                    <span class="font-medium">Messenger</span>
+                </a>
+                <a href="https://wa.me/8801xxxxxxxxx" target="_blank" class="flex flex-col items-center gap-2 p-4 rounded-2xl hover:bg-gray-50 transition border border-gray-100">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center"><i data-lucide="phone-call" class="w-6 h-6 text-emerald-600"></i></div>
+                    <span class="font-medium">WhatsApp</span>
+                </a>
+                <a href="mailto:nafijuddin2356@gmail.com" class="flex flex-col items-center gap-2 p-4 rounded-2xl hover:bg-gray-50 transition border border-gray-100">
+                    <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center"><i data-lucide="mail" class="w-6 h-6 text-rose-600"></i></div>
+                    <span class="font-medium">Email</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Message Form (Google Forms Embed) -->
+        <section class="card p-6 md:p-8">
+            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2"><i data-lucide="send" class="w-5 h-5 text-sky-500"></i> আমাদের মেসেজ পাঠান</h3>
+            <div class="form-wrapper">
+                <iframe class="form-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSe61AbAdqLYX7eYmjzbmnPg2tkwE5UyI-4KDV3t3qxJwP4AVA/viewform?embedded=true" scrolling="yes">
+                    Loading…
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white py-6 mt-8">
+        <div class="max-w-6xl mx-auto px-4 text-center text-sm text-slate-500">&copy; 2026 Agrojatra. Everything designed by Nafij uddin Nirob</div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>

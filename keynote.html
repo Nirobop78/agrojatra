@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Key Notes - Agrojatra</title>
+    <link rel="icon" href="Agrojatra.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&family=Noto+Serif+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --primary: linear-gradient(135deg, #57a6ff, #0f63ff);
+            --p: rgb(0 130 255);
+            --bg: #faf9f6;
+            --c: #fff;
+            --t: #1f2937;
+            --b: #f7f7f7;
+        }
+        * {
+            font-family: 'Google Sans', 'Noto Serif Bengali', sans-serif;
+        }
+        body {
+            background: rgb(249 247 241);
+            color: var(--t);
+        }
+        .card {
+            background: var(--c);
+            border-radius: 20px;
+            border: 2px solid var(--b);
+            box-shadow: 0 8px 24px rgba(0,0,0,.03);
+        }
+        .blog-post {
+            background: white;
+            border-radius: 20px;
+            border: 1px solid #e5e7eb;
+            padding: 1.25rem;
+            transition: box-shadow 0.2s;
+        }
+        
+        .blog-img {
+            border-radius: 16px;
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 16px;
+            margin: 1rem 0;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-30">
+        <div class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3">
+            <a href="index.html" class="flex items-center gap-2 text-gray-600 hover:text-black transition">
+                <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                <span class="text-sm font-medium">ড্যাশবোর্ড</span>
+            </a>
+            <div class="flex items-center gap-2">
+                <img src="Agrojatra.png" alt="Agrojatra" class="w-9 h-8 object-cover rounded">
+                <h1 class="font-bold text-lg">Key Notes</h1>
+            </div>
+            <div class="w-12"></div>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-3xl mx-auto px-4 py-8 w-full space-y-8">
+        <h2 class="text-2xl font-bold flex items-center gap-3"><i data-lucide="audio-lines" class="w-6 h-6 text-sky-500"></i> আপডেট ও ব্লগ</h2>
+
+        <!-- ব্লগ পোস্ট ১ (নমুনা) -->
+        <article class="blog-post">
+            <div class="flex items-center gap-2 text-gray-400 text-sm mb-3">
+                <i data-lucide="calendar" class="w-4 h-4"></i>
+                <span>১১ মে, ২০২৬</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">অগ্রযাত্রা বেটা ভার্সন লঞ্চ</h3>
+            <p class="text-gray-600 mb-3">আজ আমরা গর্বের সাথে অগ্রযাত্রার বেটা সংস্করণ প্রকাশ করলাম। এখানে ৬ষ্ঠ থেকে দ্বাদশ শ্রেণির শিক্ষার্থীরা মক টেস্ট, দ্রুত প্র্যাকটিস ও প্রশ্নব্যাংক ব্যবহার করে প্রস্তুতি নিতে পারবে।</p>
+            <!-- ছবি (ঐচ্ছিক) -->
+            <img src="blog-beta-launch.jpg" alt="বেটা লঞ্চ" class="blog-img" onerror="this.style.display='none'">
+            <p>আপনার মতামত আমাদেরকে আরও ভালো করতে সাহায্য করবে।<br>সবাইকে ধন্যবাদ!</p>
+        </article>
+
+        <!-- ব্লগ পোস্ট ২ (নমুনা) -->
+        <article class="blog-post">
+            <div class="flex items-center gap-2 text-gray-400 text-sm mb-3">
+                <i data-lucide="calendar" class="w-4 h-4"></i>
+                <span>৮ মে, ২০২৬</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">নতুন ফিচার: প্রশ্ন ব্যাংক</h3>
+            <p class="text-gray-600 mb-3">এবার থেকে আপনি যেকোনো চ্যাপ্টারের সব প্রশ্ন এক জায়গায় দেখতে ও উত্তর যাচাই করতে পারবেন। বোর্ড ও চ্যাপ্টার অনুযায়ী ফিল্টার করা যায়।</p>
+            <!-- ভিডিও (ঐচ্ছিক) -->
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/your_video_id" title="বৈশিষ্ট্য ডেমো" allowfullscreen></iframe>
+            </div>
+            <p class="text-sm text-gray-400">*ভিডিও টিউটোরিয়াল শীঘ্রই আসছে</p>
+        </article>
+
+        <!-- আরও পোস্ট এখানে যোগ করুন একই স্ট্রাকচার অনুসরণ করে -->
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white py-6 mt-8">
+        <div class="max-w-6xl mx-auto px-4 text-center text-sm text-slate-500">&copy; 2026 Agrojatra. Everything designed by Nafij uddin Nirob</div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
